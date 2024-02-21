@@ -1,6 +1,6 @@
-#Creating To-Do App Using HTML, CSS And JavaScript
+##Creating To-Do App Using HTML, CSS And JavaScript
 
-###try it now 
+   Try it now 
 
      https://amrabir.github.io/To-Do-App/ 
 
