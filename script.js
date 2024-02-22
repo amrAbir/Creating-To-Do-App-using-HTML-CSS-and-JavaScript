@@ -1,7 +1,6 @@
 let input = document.querySelector(".input");
 let submit = document.querySelector(".add");
 let tasksDiv = document.querySelector(".tasks");
-let clrSpan = document.querySelector(".clr");
 
 
 let arrayOfTasks = [];
@@ -27,13 +26,13 @@ tasksDiv.addEventListener("click", (e)=>{
     }
 })
 
-
+console.log(!tasksDiv.getElementsByClassName("clr"));
 submit.onclick = function (){
     if(input.value != ""){
         addTaskToArray(input.value);
         input.value = "";
     }
-    if(Boolean(tasksDiv.children.length !== 0)) {
+    if(!(tasksDiv.getElementsByClassName("clr").length) && tasksDiv.innerHTML !== "") {
         let clear = document.createElement("span");
         clear.className = "clr";
         clear.appendChild(document.createTextNode("Clear"));
